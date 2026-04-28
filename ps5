@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+    <title>Student Registration Form</title>
+</head>
+<body style="background-color:lightblue;">
+
+<div align="center" style="">
+<form style="border:1px solid gray; margin-top:50px; margin-left:10px; margin-right:10px; background-color:white; width:50%;">
+  <h2 align="center" style="color:purple;">Student Registration Form</h2><br>
+
+  <p style="">
+    <b>NAME:</b>
+    <input type="text" name="name" value="name">
+  </p><br>
+
+  <p>
+    <b>EMAIL:</b>
+    <input type="email" name="email" value="email">
+  </p><br>
+
+   <p>
+    <b>GENDER:</b><br>
+    <input type="radio" name="gender" value="male">MALE<br>
+    <input type="radio" name="gender" value="female">FEMALE<br>
+    <input type="radio" name="gender" value="other">OTHER<br>
+  </p><br>
+
+  <p>
+    <b>DATE OF BIRTH:</b>
+    <input type="date" name="dob" value="dob">
+  </p><br>
+
+   <p>
+    <input type="button" name="submit" value="submit" style="background-color:purple; color:white; width:80px; height:40px;">
+  </p><br>
+
+</form>
+</div>
+
+</body>
+</html>
