@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+    <title>I2IT TechCon 2025</title>
+</head>
+<body style="background-color:lightblue;">
+
+<header style="background-color:green; text-align:center; padding:50px;">
+   <h1>I2IT TechCon 2025</h1>
+   <p>Innovate | Integrate | Inspire</p>
+</header>
+
+
+<nav style="background-color:#333; padding:10px; margin-top:10px; text-align:right;">
+  <a href="#about" style="text-decoration:none; padding:5px; color:white;">About</a>
+  <a href="#schedule" style="text-decoration:none; padding:5px; color:white;">Schedule</a>
+  <a href="#contact" style="text-decoration:none; padding:5px; color:white;">Contact</a>
+</nav>
+
+<div id="about" style="margin-top:70px; background-color:silver; color:brown; padding:50px;">
+<h1>About the Event</h1>
+<p>
+  I2IT TechCon 2025 is a technical conference bringing together students,
+  professionals, and innovators to explore emerging technologies,
+  share knowledge, and build connections.
+</p>
+</div>
+
+<div id="schedule" style="margin-top:120px; background-color:silver; color:brown; padding:50px;">
+<h1>Event Schedule</h1>
+
+<table border="1">
+
+<th>Time</th>
+<th>Event</th>
+<th>Speaker</th>
+
+<tr>
+  <td>10:00 AM</td>
+  <td>Opening Ceremony</td>
+  <td>Dr. Geller</td>
+</tr>
+<tr>
+  <td>11:30 AM</td>
+  <td>AI Workshop</td>
+  <td>Ms. Kaguya</td>
+</tr>
+<tr>
+  <td>01:00 PM</td>
+  <td>Cyber Security Talk</td>
+  <td>Ms. Chiyo-chan</td>
+</tr>
+
+</table>
+</div>
+
+<div id="contact" style="margin-top:120px; background-color:silver; color:brown; padding:50px;">
+<h1>Contact Us</h1>
+<form style="border:1px solid black; padding:40px; width:350px; background-color:white;">
+ Name:<input type="text" name="name" value="name" style=" margin-top:10px; margin-bottom:10px; margin-left:10px; margin-right:10px;"><br>
+ Email:<input type="email" name="email" value="email" style=" margin-top:10px; margin-bottom:10px; margin-left:10px; margin-right:10px;"><br>
+ Message:<input type="textarea" name="msg" value="msg" style=" margin-top:10px; margin-bottom:10px; margin-left:10px; margin-right:10px;"><br>
+<button type="submit" value="submit" name="submit" style=" margin-top:10px; margin-bottom:10px; margin-left:10px; margin-right:10px;">Submit</button><br>
+</form>
+</div>
+
+<footer style="margin-top:40px; background:#333; color:white; padding:10px; text-align:center">
+  <h2>@ I2IT TechCon 2025</h2>
+</footer>
+
+</body>
+</html>
