@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>String Operations</title>
+
+    <style>
+        body {
+            background-color: lightblue;
+            font-family: Arial;
+        }
+        .box {
+            width: 40%;
+            margin: auto;
+            margin-top: 50px;
+            background-color: white;
+            padding: 20px;
+            border: 1px solid gray;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="box">
+
+<h2 align="center">String Operations</h2>
+
+<form method="post">
+    Enter String: <br>
+    <input type="text" name="str"><br><br>
+
+    <input type="submit" name="submit" value="Process">
+</form>
+
+<hr>
+
+<?php
+if(isset($_POST['submit']))
+{
+    $str = $_POST['str'];
+
+    echo "<h3>Results:</h3>";
+
+    // a) Uppercase
+    echo "Uppercase: " . strtoupper($str) . "<br>";
+
+    // b) Lowercase
+    echo "Lowercase: " . strtolower($str) . "<br>";
+
+    // c) First character uppercase
+    echo "Ucfirst: " . ucfirst($str) . "<br>";
+
+    // d) First letter of all words uppercase
+    echo "Ucwords: " . ucwords($str) . "<br>";
+
+    // e) Remove leading zeroes
+    echo "Without Leading Zeroes: " . ltrim($str, "0") . "<br>";
+
+    // f) Reverse
+    echo "Reverse: " . strrev($str) . "<br>";
+
+    // Length
+    echo "Length: " . strlen($str) . "<br>";
+
+    // Substring (first 5 chars)
+    echo "Substring: " . substr($str, 0, 5) . "<br>";
+}
+?>
+
+</div>
+
+</body>
+</html>
