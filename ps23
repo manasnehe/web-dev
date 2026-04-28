@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Marks Calculator</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: linear-gradient(to right, #74ebd5, #ACB6E5);
+        }
+
+        .container {
+            width: 40%;
+            margin: auto;
+            margin-top: 60px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px gray;
+            text-align: center;
+        }
+
+        input {
+            width: 90%;
+            padding: 8px;
+            margin: 5px;
+        }
+
+        button {
+            padding: 10px;
+            background-color: purple;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: darkmagenta;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Student Marks Calculator</h2>
+
+<input type="text" id="name" placeholder="Enter Name"><br>
+
+<input type="number" id="m1" placeholder="Subject 1"><br>
+<input type="number" id="m2" placeholder="Subject 2"><br>
+<input type="number" id="m3" placeholder="Subject 3"><br>
+<input type="number" id="m4" placeholder="Subject 4"><br>
+<input type="number" id="m5" placeholder="Subject 5"><br><br>
+
+<button onclick="calculate()">Calculate</button>
+
+<h3 id="result"></h3>
+
+</div>
+
+<script>
+
+function calculate()
+{
+    var name = document.getElementById("name").value;
+
+    var m1 = parseFloat(document.getElementById("m1").value);
+    var m2 = parseFloat(document.getElementById("m2").value);
+    var m3 = parseFloat(document.getElementById("m3").value);
+    var m4 = parseFloat(document.getElementById("m4").value);
+    var m5 = parseFloat(document.getElementById("m5").value);
+
+    var total = m1 + m2 + m3 + m4 + m5;
+    var percent = total / 5;
+
+    var grade;
+
+    if(percent >= 75)
+        grade = "A";
+    else if(percent >= 60)
+        grade = "B";
+    else if(percent >= 50)
+        grade = "C";
+    else
+        grade = "Fail";
+
+    document.getElementById("result").innerHTML =
+        "Name: " + name + "<br>Total: " + total +
+        "<br>Percentage: " + percent + "%" +
+        "<br>Grade: " + grade;
+}
+
+</script>
+
+</body>
+</html>
