@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Area Calculator</title>
+</head>
+
+<body>
+
+<h2 align="center">Area Calculator</h2>
+
+<div align="center">
+
+    <select id="shape">
+        <option value="rect">Rectangle</option>
+        <option value="tri">Triangle</option>
+        <option value="circle">Circle</option>
+    </select><br><br>
+
+    <input type="number" id="val1" placeholder="Enter value 1"><br><br>
+    <input type="number" id="val2" placeholder="Enter value 2 (if needed)"><br><br>
+
+    <button onclick="calculateArea()">Calculate Area</button>
+
+    <h3 id="result"></h3>
+
+</div>
+
+<script>
+
+function rectangle(l, b)
+{
+    return l * b;
+}
+
+function triangle(b, h)
+{
+    return 0.5 * b * h;
+}
+
+function circle(r)
+{
+    return 3.14 * r * r;
+}
+
+function calculateArea()
+{
+    var shape = document.getElementById("shape").value;
+    var v1 = parseFloat(document.getElementById("val1").value);
+    var v2 = parseFloat(document.getElementById("val2").value);
+    var res;
+
+    switch(shape)
+    {
+        case "rect":
+            res = rectangle(v1, v2);
+            break;
+
+        case "tri":
+            res = triangle(v1, v2);
+            break;
+
+        case "circle":
+            res = circle(v1);
+            break;
+
+        default:
+            res = "Invalid choice";
+    }
+
+    document.getElementById("result").innerHTML = "Area: " + res;
+}
+
+</script>
+
+</body>
+</html>
