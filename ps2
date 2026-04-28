@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+
+<head>
+  <title> Survey Form </title>
+</head>
+
+<body style="background-color:aliceblue">
+<form style="background-color:lightblue">
+
+   <br><br><b>Name:</b>
+    <input type="text" value="name" name="name" style="width:80%; padding:5px"><br><br>
+  
+    <b>Gender:</b>
+    <input type="radio" value="male" name="gender">Male
+    <input type="radio" value="female" name="gender">Female<br><br> 
+
+    <b>Interest</b>
+    <input type="checkbox" value="Gaming" name="hobbies">Gaming
+    <input type="checkbox" value="Travelling" name="hobbies">Travelling
+    <input type="checkbox" value="Reading" name="hobbies">Reading<br><br>
+
+    <b>Feedback</b>
+    <input type="textarea" value="feedback" name="feedback" style="width:80%; padding:5px"><br><br> 
+
+     <center> <button type="submit" value="submit" style="background-color:grey; color:white;">Submit</button><br><br>
+
+</form>
+
+</body>
+</html>
