@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search Roll Number</title>
+
+    <style>
+        body {
+            background-color: lightblue;
+            font-family: Arial;
+        }
+        .box {
+            width: 40%;
+            margin: auto;
+            margin-top: 50px;
+            background-color: white;
+            padding: 20px;
+            border: 1px solid gray;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="box">
+
+<h2 align="center">Search Student Roll Number</h2>
+
+<form method="post">
+    Enter Roll Number: <br>
+    <input type="number" name="roll"><br><br>
+
+    <input type="submit" name="submit" value="Search">
+</form>
+
+<hr>
+
+<?php
+if(isset($_POST['submit']))
+{
+    $roll = $_POST['roll'];
+
+    // Array of roll numbers
+    $arr = array(101, 102, 103, 104, 105);
+
+    // Search using in_array()
+    if(in_array($roll, $arr))
+    {
+        echo "Roll Number Found!";
+    }
+    else
+    {
+        echo "Roll Number Not Found!";
+    }
+}
+?>
+
+</div>
+
+</body>
+</html>
