@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration</title>
+
+    <style>
+        body {
+            background-color: lightblue;
+            font-family: Arial;
+        }
+        .box {
+            width: 35%;
+            margin: auto;
+            margin-top: 50px;
+            background-color: white;
+            padding: 20px;
+            border: 1px solid gray;
+        }
+        input {
+            width: 90%;
+            padding: 8px;
+        }
+        .btn {
+            background-color: purple;
+            color: white;
+            width: 100px;
+            height: 35px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="box">
+
+<h2 align="center">Student Registration</h2>
+
+<form onsubmit="return validateForm()">
+
+    Name:<br>
+    <input type="text" id="name"><br><br>
+
+    Email:<br>
+    <input type="text" id="email"><br><br>
+
+    Password:<br>
+    <input type="password" id="pass"><br><br>
+
+    Confirm Password:<br>
+    <input type="password" id="cpass"><br><br>
+
+    Phone Number:<br>
+    <input type="text" id="phone"><br><br>
+
+    <input type="submit" value="Register" class="btn">
+
+</form>
+
+<h3 id="msg" style="color:green; text-align:center;"></h3>
+
+</div>
+
+<script>
+
+function validateForm()
+{
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    var pass = document.getElementById("pass").value;
+    var cpass = document.getElementById("cpass").value;
+    var phone = document.getElementById("phone").value;
+
+    if(name=="" || email=="" || pass=="" || cpass=="" || phone=="")
+    {
+        alert("All fields are required!");
+        return false;
+    }
+
+    if(name.length < 3)
+    {
+        alert("Name must be at least 3 characters!");
+        return false;
+    }
+
+    if(email.indexOf('@')==-1 || email.indexOf('.')==-1)
+    {
+        alert("Enter valid email!");
+        return false;
+    }
+
+    if(pass.length < 6)
+    {
+        alert("Password must be at least 6 characters!");
+        return false;
+    }
+
+    if(pass != cpass)
+    {
+        alert("Passwords do not match!");
+        return false;
+    }
+
+    if(!/^[0-9]{10}$/.test(phone))
+    {
+        alert("Enter valid 10-digit phone number!");
+        return false;
+    }
+
+    document.getElementById("msg").innerHTML = "Registration Successful!";
+    return false; // prevent actual submit for demo
+}
+
+</script>
+
+</body>
+</html>
