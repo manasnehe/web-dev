@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+    <title>Student Result Dashboard</title>
+</head>
+
+<body>
+
+<style>
+   table{
+          border-collapse:collapse;
+          width:200px;
+          height:200px;
+          text-align:center;
+          margin:auto;
+          margin-top:90px;
+        }
+    th,tr{
+          border:1px solid gray;
+          padding:10px;
+         }
+    th{
+        background-color:#333;
+        color:white; 
+      }
+</style>
+
+<link rel="stylesheet" href="style.css">
+
+<h1 style="text-align:center">Student Result Dashboard</h1>
+<h2 style="text-align:center">Result table</h2>
+
+<table>
+ <tr>
+    <th>Subject</th>
+    <th>Marks</th>
+    <th>Grade</th>
+ </tr>
+
+ <tr>
+     <td>DSA</td>
+     <td>95</td>
+     <td>A+</td>
+ </tr>
+
+ <tr>
+     <td>OS</td>
+     <td>85</td>
+     <td>A</td>
+ </tr>
+
+  <tr>
+     <td>DBMS</td>
+     <td>69</td>
+     <td>B+</td>
+ </tr>
+
+</table>
+
+
+</body>
+</html>
