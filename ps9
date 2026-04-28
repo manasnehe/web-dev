@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+    <title>Student Result Dashboard</title>
+</head>
+
+<body style="background-color:lightblue;">
+
+<h1 style="text-align:center;">Library Sign Up Page</h1><br>
+
+<div align="center" style="">
+<form onsubmit="return validateForm()" style="border:1px solid gray; margin-top:50px; margin-left:10px; margin-right:10px; background-color:white; width:50%;">
+  <h2 align="center" style="color:purple;">Student Registration Form</h2><br>
+
+  <p style="">
+    <b>NAME:</b>
+    <input type="text" id="name">
+  </p><br>
+
+  <p>
+    <b>EMAIL:</b>
+    <input type="email" id="email">
+  </p><br>
+
+  <p>
+    <b>MOBILE NUMBER:</b>
+    <input type="text" id="mob" >
+  </p><br>
+
+   <p>
+    <input type="submit" id="submit" value="submit" style="background-color:purple; color:white; width:80px; height:40px;">
+  </p><br>
+
+</form>
+</div>
+
+
+<script>
+ 
+  function validateForm()
+  {
+     
+      var name=document.getElementById('name').value;
+      var email=document.getElementById('email').value;
+      var mob=document.getElementById('mob').value;
+
+    if(name=="" || email=="" || mob=="")
+    {
+      alert("Fill the all fields!!");
+      return false;
+    }
+    if(mob.length!=10 || isNaN(mob))
+    {
+      alert("Enter valid mobile number!!");
+      return false;
+    }
+    if(email.indexOf('@')==-1 || email.indexOf('.')==-1)
+    {
+      alert("Enter valid email id!");
+      return false;
+    }
+    if(name.length<3)
+    {
+      alert("Enter valid name!");
+      return false;
+    }
+  
+    alert("Form Submitted successfully!!");
+    document.write(name+" "+email+" "+mob);
+    return true;
+  }
+
+</script>
+
+</body>
+</html>
