@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+    <title>I2IT</title>
+</head>
+<body style="background-color:#f4f4f4;">
+
+
+<image src="i2it.png" style="width:10%; height:10%; display:block; margin:auto;"><br><br><br>
+<a href="https://www.bing.com/ck/a?!&&p=576c776bca84b24cfa8eb7c59a346f904fb57f306df04c4cac6fb0b72452bc50JmltdHM9MTc3NjkwMjQwMA&ptn=3&ver=2&hsh=4&fclid=192aeced-811d-6132-0a78-ff8f80af60e9&psq=i2it+pune+&u=a1aHR0cHM6Ly93d3cuaXNxdWFyZWl0LmVkdS5pbi8" style="padding:460px; text-wrap:wrap; text-decoration:none">Intenational Institute of Information Technology</a><br><br><br><br><br><br>
+
+
+<div style="margin-left:350px;">
+<h2 style="margin-left:180px; color:#333;">Courses & Subjects</h2>
+<table border="2" style="background-color:lightyellow; text-align:center;">
+
+<th>Course</th>
+<th>Subject 1</th>
+<th>Subject 2</th>
+<th>Subject 3</th>
+
+<tr style="background-color:lightpink;">
+<td>Computer Engineering</td>
+<td>DSA</td>
+<td>OOP</td>
+<td>IOT</td>
+</tr>
+
+<tr style="background-color:white;">
+<td>Information Technology</td>
+<td>WDL</td>
+<td>OS</td>
+<td>CG</td>
+</tr>
+
+<tr style="background-color:lightgrey;">
+<td>Electrical & Electronics Engineering</td>
+<td>Digital Electronics</td>
+<td>Signal</td>
+<td>Microprocessor</td>
+</tr>
+
+</table>
+</div>
+
+<footer style="margin-top:40px; background:#333; color:white; padding:10px; text-align:center">
+  <h2>@ I2IT Pune</h2>
+</footer>
+
+
+</body>
+</html>
+
+
