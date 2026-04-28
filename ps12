@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+
+    <style>
+        body {
+            background-color: lightblue;
+            font-family: Arial;
+            text-align: center;
+        }
+        .box {
+            background-color: white;
+            width: 40%;
+            margin: auto;
+            margin-top: 100px;
+            padding: 20px;
+            border: 1px solid gray;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="box">
+<?php
+    date_default_timezone_set("Asia/Kolkata");
+
+    $hour = date("H");
+
+    // Dynamic Greeting
+    if($hour < 12)
+        $greet = "Good Morning";
+    else if($hour < 18)
+        $greet = "Good Afternoon";
+    else
+        $greet = "Good Evening";
+
+    echo "<h2>$greet, Welcome to Dashboard</h2>";
+
+    echo "<p><b>Date:</b> " . date("d-m-Y") . "</p>";
+    echo "<p><b>Time:</b> " . date("h:i:s A") . "</p>";
+?>
+</div>
+
+</body>
+</html>
