@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Details</title>
+
+    <style>
+        body {
+            background-color: lightblue;
+            font-family: Arial;
+        }
+        .box {
+            width: 40%;
+            margin: auto;
+            margin-top: 50px;
+            background-color: white;
+            padding: 20px;
+            border: 1px solid gray;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="box">
+
+<h2 align="center">Student Details</h2>
+
+<form method="post">
+    Name: <br>
+    <input type="text" name="name"><br><br>
+
+    Marks (3 Subjects): <br>
+    <input type="number" name="m1"><br><br>
+    <input type="number" name="m2"><br><br>
+    <input type="number" name="m3"><br><br>
+
+    <input type="submit" name="submit" value="Calculate">
+</form>
+
+<hr>
+
+<?php
+if(isset($_POST['submit']))
+{
+    $name = $_POST['name'];
+
+    // String functions
+    $upper = strtoupper($name);
+    $length = strlen($name);
+
+    // Array of marks
+    $marks = array($_POST['m1'], $_POST['m2'], $_POST['m3']);
+
+    // Total and Average
+    $total = array_sum($marks);
+    $avg = $total / count($marks);
+
+    echo "<h3>Result:</h3>";
+    echo "Name: $upper <br>";
+    echo "Name Length: $length <br><br>";
+
+    echo "Total Marks: $total <br>";
+    echo "Average Marks: $avg <br>";
+}
+?>
+
+</div>
+
+</body>
+</html>
