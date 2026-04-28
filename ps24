@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Feedback Form</title>
+
+    <style>
+        body {
+            background-color: lightblue;
+            font-family: Arial;
+        }
+        .box {
+            width: 40%;
+            margin: auto;
+            margin-top: 50px;
+            background: white;
+            padding: 20px;
+            border: 1px solid gray;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="box">
+
+<h2 align="center">Feedback Form</h2>
+
+<form method="post">
+    Name:<br>
+    <input type="text" name="name"><br><br>
+
+    Feedback:<br>
+    <textarea name="feedback"></textarea><br><br>
+
+    <input type="submit" name="submit" value="Submit">
+</form>
+
+<hr>
+
+<?php
+if(isset($_POST['submit']))
+{
+    date_default_timezone_set("Asia/Kolkata");
+
+    $name = $_POST['name'];
+    $feedback = $_POST['feedback'];
+
+    echo "<h3>Feedback Submitted:</h3>";
+    echo "Name: $name <br>";
+    echo "Feedback: $feedback <br><br>";
+
+    echo "Date: " . date("d-m-Y") . "<br>";
+    echo "Time: " . date("h:i:s A") . "<br>";
+}
+?>
+
+</div>
+
+</body>
+</html>
