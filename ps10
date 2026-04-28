@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dynamic DOM Example</title>
+</head>
+
+<body>
+
+<h1 align="center">Student Dashboard</h1>
+
+<div id="content" align="center"></div><br>
+
+<div align="center">
+    <button onclick="showData()">Show Details</button>
+</div>
+
+<script>
+
+function showData()
+{
+    // Creating elements dynamically
+    var name = document.createElement("h2");
+    name.innerHTML = "Name: Manas";
+
+    var course = document.createElement("p");
+    course.innerHTML = "Course: Computer Engineering";
+
+    var marks = document.createElement("p");
+    marks.innerHTML = "Marks: 85%";
+
+    // Selecting div
+    var div = document.getElementById("content");
+
+    // Adding elements to div
+    div.appendChild(name);
+    div.appendChild(course);
+    div.appendChild(marks);
+}
+
+</script>
+
+</body>
+</html>
